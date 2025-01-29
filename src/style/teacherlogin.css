@@ -1,0 +1,104 @@
+/* Root variables for color palette */
+:root {
+    --primary-color: #007bff; /* Blue for primary actions */
+    --secondary-color: #28a745; /* Green for success messages */
+    --button-hover-color: #0056b3; /* Darker blue for button hover */
+    --background-color: #f9f9f9; /* Light gray background */
+    --white-color: #ffffff;
+    --input-border-color: #ddd;
+}
+
+/* Container for the form */
+.login-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Section title */
+.section-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Form styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Submit button styles */
+.btn-login {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Success message */
+.success-message {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}

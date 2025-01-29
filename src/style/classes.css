@@ -1,0 +1,87 @@
+/* Root variables for color palette */
+:root {
+    --primary-color: #4C9A2A; /* Green (For buttons and highlighted items) */
+    --secondary-color: #2C3E50; /* Dark blue (For section titles and text) */
+    --accent-color: #F39C12; /* Golden accent color */
+    --background-color: #F5F5F5; /* Light gray background */
+    --white-color: #FFFFFF;
+    --gray-color: #BDC3C7;
+}
+
+/* Section styles */
+.classes-section {
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Section title */
+.section-title {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-align: center;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* List styles */
+.classes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual class item */
+.class-item {
+    background-color: var(--gray-color);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover effects for each class item */
+.class-item:hover {
+    transform: translateX(10px);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .classes-section {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .class-item {
+        padding: 10px;
+    }
+}

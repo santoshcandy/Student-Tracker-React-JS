@@ -1,0 +1,247 @@
+General Styles
+:root {
+    --primary-color: #1a3d6d; /* Dark Blue */
+    --secondary-color: #e2e2e2; /* Light Gray */
+    --accent-color: #ffffff; /* White */
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Header Styling */
+.header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+.section {
+    background-color: var(--accent-color);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Marks List */
+.marks-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.marks-item {
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.marks-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.marks-item div {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.marks-item div strong {
+    color: var(--primary-color);
+}
+
+/* CSS Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Custom styles for the student dashboard */
+
+/* Background and color palette */
+:root {
+    --primary-color: #4C9A2A; /* Green (For success, fresh, and professional feel) */
+    --secondary-color: #2C3E50; /* Dark blue (For a professional feel) */
+    --accent-color: #F39C12; /* Golden accent color */
+    --background-color: #F5F5F5; /* Light gray background */
+    --white-color: #FFFFFF;
+    --gray-color: #BDC3C7;
+}
+
+/* Global body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header section */
+.dashboard-header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+.total-score {
+    font-size: 20px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Student information */
+.student-info {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Marks section */
+.marks-section {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.marks-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mark-item {
+    padding: 15px;
+    background-color: var(--gray-color);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.mark-item div {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Edit Button */
+.btn-warning {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-warning:hover {
+    background-color: #F1C40F;
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .dashboard-header {
+        padding: 15px;
+    }
+
+    .marks-section {
+        padding: 15px;
+    }
+
+    .mark-item {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+
