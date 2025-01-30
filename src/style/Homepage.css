@@ -1,0 +1,79 @@
+/* Homepage.css */
+.homepage-container {
+    background-color: #1a1a2e; /* Dark background */
+    color: #eaeaea; /* Light text for contrast */
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .content-container {
+    max-width: 600px;
+    padding: 30px;
+    background-color: #16213e; /* Slightly darker box background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1.5s ease-out;
+  }
+  
+  .ch {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f9a825; /* Golden color for title */
+  }
+  
+ .cp {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Color styles for buttons */
+  .btn-teacher {
+    background-color: #4caf50; /* Green color for Teacher button */
+    color: white;
+  }
+  
+  .btn-student {
+    background-color: #2196f3; /* Blue color for Student button */
+    color: white;
+  }
+  
+  /* Hover effect for buttons */
+  .btn-teacher:hover,
+  .btn-student:hover {
+    background-color: #ffffff;
+    color: #333333;
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

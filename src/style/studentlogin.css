@@ -1,0 +1,85 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Dark background and center the form */
+  
+  
+  /* The login form container */
+  .login-container {
+    background-color: #1e1e1e; /* Darker container */
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Heading text */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: orangered;
+  }
+  
+  /* Input fields */
+  .form-control {
+    background-color: #2c2c2c; /* Dark input field */
+    border: 1px solid #444;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    background-color: #444;
+    border-color: #1e90ff;
+    outline: none;
+  }
+  
+  /* Button with animation */
+  .login-btn {
+    width: 100%;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #3700b3; /* Darker blue */
+    transform: scale(1.05);
+  }
+  
+  /* Error message */
+  .alert {
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Animation for form */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
